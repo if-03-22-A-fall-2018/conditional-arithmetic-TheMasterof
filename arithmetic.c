@@ -5,6 +5,10 @@
 int main(int argc, char const *argv[]) {
   int choice;
 choice=Choice(choice);
+if (choice==1) {
+  Add();
+}
+
   return 0;
 }
 int Choice(int choice)
@@ -12,8 +16,8 @@ int Choice(int choice)
   do {
   printf("Menu\n");
   printf("=========\n");
-  printf("1.) Addieren\n");
-  printf("2.) Multiplizieren\n");
+  printf("1.) Add\n");
+  printf("2.) Multiply\n");
   printf("======================\n");
   printf("Enter your choice: ");
   scanf("%d",&choice);
@@ -32,4 +36,15 @@ bool Check(int choice){
 else{
   return true;
   }
+}
+void Add(){
+  Bordernum();
+}
+void Mul(){
+  Bordernum();
+}
+int Bordernum(){
+  int border;
+  printf("\nEnter a breaknumber: \n", );
+  scanf("%d\n", );
 }
