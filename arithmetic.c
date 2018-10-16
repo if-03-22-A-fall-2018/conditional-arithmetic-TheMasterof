@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <Methods.h>
 
 int main(int argc, char const *argv[]) {
   int choice;
@@ -16,10 +16,10 @@ int Choice(int choice)
   printf("======================\n", );
   printf("Enter your choice: ", );
   scanf("%d\n"choice );
-  if (Check(choice)) {
-    /* code */
+  if (!Check(choice)) {
+    printf("\nInvalid Input!\n", );
   }
-}while(Check(choice));
+}while(!Check(choice));
 
 
 }
